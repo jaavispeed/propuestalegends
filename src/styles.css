@@ -73,7 +73,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  opacity: 0.16;
+  opacity: 0.38;
   user-select: none;
 }
 
@@ -85,5 +85,5 @@ body {
   color: #38bdf8;
   transform: rotate(-25deg);
   white-space: nowrap;
-  text-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+  text-shadow: 0 0 24px rgba(56, 189, 248, 0.6);
 }
