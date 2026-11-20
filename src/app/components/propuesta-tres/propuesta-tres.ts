@@ -70,12 +70,12 @@ import { InscripcionModalComponent } from '../inscripcion-modal/inscripcion-moda
         }
       </header>
 
-      <section class="relative min-h-[90vh] flex flex-col justify-end px-4 sm:px-8 pb-16 pt-32 overflow-hidden border-b border-white/10 bg-[#050811]">
-        <div class="absolute inset-0 z-0 flex items-center justify-center pointer-events-none opacity-25">
+      <section class="relative min-h-[90vh] flex flex-col justify-end px-4 sm:px-8 pb-16 pt-24 sm:pt-32 overflow-hidden border-b border-white/10 bg-[#050811]">
+        <div class="absolute inset-0 z-0 flex items-center justify-center pointer-events-none opacity-25 overflow-hidden">
           <img 
             src="assets/planeta%20blanco.png" 
             alt="SOC Universo" 
-            class="w-[1250px] sm:w-[1450px] md:w-[1650px] max-w-none select-none object-contain"
+            class="w-[360px] sm:w-[700px] md:w-[1100px] lg:w-[1400px] max-w-none select-none object-contain"
             loading="eager"
             decoding="async"
           />

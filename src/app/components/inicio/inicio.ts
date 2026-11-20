@@ -67,7 +67,7 @@ import { InscripcionModalComponent } from '../inscripcion-modal/inscripcion-moda
     <main class="pt-16">
       <section class="relative min-h-[92vh] flex flex-col justify-center items-center text-center px-4 sm:px-6 py-20 sm:py-24 overflow-hidden border-b border-white/10 bg-[#0b132b]">
         <div class="absolute inset-0 opacity-15 pointer-events-none flex items-center justify-center">
-          <img src="assets/planeta%20blanco.png" alt="SOC Universo" class="w-[900px] max-w-none animate-pulse duration-[10000ms]" loading="eager" decoding="async" />
+          <img src="assets/planeta%20blanco.png" alt="SOC Universo" class="w-[340px] sm:w-[600px] md:w-[900px] max-w-full h-auto object-contain" loading="eager" decoding="async" />
         </div>
 
         <div class="relative z-10 max-w-4xl mx-auto flex flex-col items-center">
