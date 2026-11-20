@@ -1,3 +1,89 @@
-/* You can add global styles to this file, and also import other style files */
-
 @import 'tailwindcss';
+
+@theme {
+  --color-deep-navy: #0b132b;
+  --color-sky-cyan: #38bdf8;
+  --color-midnight-slate: #1c2541;
+  --color-deep-marine: #0f172a;
+  --color-slate: #334155;
+  --color-charcoal: #0f172a;
+  --color-black: #000000;
+  --color-pure-white: #ffffff;
+  --color-ice-blue: #e0f2fe;
+  --color-vibrant-cyan: #06b6d4;
+
+  --font-display: 'Bebas Neue', 'Oswald', 'Druk Condensed Super Desktop', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Inter', 'Neue Montreal', ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+:root {
+  --color-deep-navy: #0b132b;
+  --color-sky-cyan: #38bdf8;
+  --color-midnight-slate: #1c2541;
+  --color-deep-marine: #0f172a;
+  --color-slate: #334155;
+  --color-charcoal: #0f172a;
+  --color-black: #000000;
+  --color-pure-white: #ffffff;
+  --color-ice-blue: #e0f2fe;
+  --color-vibrant-cyan: #06b6d4;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-deep-navy);
+  color: var(--color-pure-white);
+  overflow-x: hidden;
+}
+
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: 0.05em;
+}
+
+@keyframes transicion-propuesta {
+  0% {
+    opacity: 0;
+    transform: translateY(6px) scale(0.995);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animar-propuesta {
+  animation: transicion-propuesta 220ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  will-change: transform, opacity;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animar-propuesta {
+    animation: none !important;
+  }
+}
+
+.marca-de-agua-pantalla {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  opacity: 0.16;
+  user-select: none;
+}
+
+.marca-de-agua-texto {
+  font-family: var(--font-display);
+  font-size: clamp(5rem, 20vw, 22rem);
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  color: #38bdf8;
+  transform: rotate(-25deg);
+  white-space: nowrap;
+  text-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+}
